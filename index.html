@@ -5,20 +5,18 @@
   <title>The Internet!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
   <link href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
   <div class="container">
-    <video class="mejs__player">
+    <video id="video" class="mejs__player">
       <source type="video/mp4" src="video/video.mp4"/>
       <source type="video/ogg" src="video/video.ogg"/>
     </video>
     <p>
-       <span class="highlight">Now that we've looked at the architecture
+       <span>Now that we've looked at the architecture
        of the internet, let's see how you might</span>
        <span>connect your personal devices to
        the internet inside your house.</span>
@@ -49,5 +47,7 @@
      </p>
   </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
+<script src="js/app.js"></script>
 </body>
