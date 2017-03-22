@@ -1,43 +1,43 @@
-1 good
+1 good+
 00:00:00,240 --> 00:00:04,130
 Now that we've looked at the architecture
 of the internet, let's see how you might
 
-2 good
+2 good+
 00:00:04,130 --> 00:00:07,535
 connect your personal devices to
 the internet inside your house.
 
-3 good
+3 good+
 00:00:07,535 --> 00:00:11,270
 Well there are many ways to
 connect to the internet, and
 
-4 good
+4 good+
 00:00:11,270 --> 00:00:13,960
 most often people connect wirelessly.
 
-5 good
+5 good+
 00:00:13,960 --> 00:00:17,940
 Let's look at an example of how
 you can connect to the internet.
 
-6 good
+6 good+
 00:00:17,940 --> 00:00:22,370
 If you live in a city or a town,
 you probably have a coaxial cable for
 
-7 good
+7 good+
 00:00:22,370 --> 00:00:26,880
 cable Internet, or a phone line if you
 have DSL, running to the outside of
 
-8 good
+8 good+
 00:00:26,880 --> 00:00:30,920
 your house, that connects you to
 the Internet Service Provider, or ISP.
 
-9  good
+9  good+
 00:00:32,100 --> 00:00:34,730
 If you live far out in the country,
 you'll more likely have
