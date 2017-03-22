@@ -44,7 +44,7 @@ p {
         VIDEO
 =======================*/
 
-.mejs__player {
+.container .mejs__player {
   width: 100%;
 }
 
