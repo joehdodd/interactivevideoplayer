@@ -37,6 +37,11 @@ p {
         VIDEO
 =======================*/
 
+.mejs__player,
+.mejs__controls {
+  border-radius: 4px;
+}
+
 .mejs__player .mejs__controls:not([style*="display: none"]) {
     background: rgba(25, 50, 25, 0.8);
 }
@@ -59,7 +64,7 @@ p {
   .wrapper {
     max-width: 768px;
   }
-  
+
   .container {
     margin: 10px 2.5%;
     border-radius: 4px;
