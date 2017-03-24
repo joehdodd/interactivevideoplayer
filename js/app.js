@@ -3,19 +3,16 @@ const video = document.getElementById('video');
 const captions = document.querySelectorAll('p span');
 
 // JUMP TO CURRENT TIME
-   // USING QUERYSELECTORALL, WE NEED TO LOOP OVER THE COLLECTION FIRST
 for(let i = 0; i < captions.length; ++i) {
   // THEN ADD CLICK EVENT LISTENER TO LOOPED COLLECTION
-    captions[i].addEventListener('click', () => {
-      // DEFINE TIME VALUE BY STORING DATA-START IN VARIABLE
-      let timeValue = captions[i].getAttribute('data-start');
-      // SET VIDEO.CURRENTTIME = TIMEVALUE
-      video.currentTime = timeValue;
-    });
-};
+  captions[i].addEventListener('click', () => {
+    // DEFINE TIME VALUE BY STORING DATA-START IN VARIABLE
+    let timeValue = captions[i].getAttribute('data-start');
+    video.currentTime = timeValue;
+  });
+}
 
 // HIGHLIGHT CAPTIONS
-  // ADD EVENT LISTENER TO VIDEO
 video.addEventListener('timeupdate', () => {
   // LOOP OVER CAPTIONS (QUERYSELECTORALL COLLECTION)
   for(let i = 0; i < captions.length; ++i) {
@@ -27,10 +24,8 @@ video.addEventListener('timeupdate', () => {
     let end = captions[i].getAttribute('data-end');
       // SET CONDITIONAL TO CHECK START AND END AGAINST TIME
       if (time >= start && time <= end) {
-        // IF && IS TRUE, ADD HIGHLIGHT
         captions[i].className = 'highlight';
       } else {
-        // OTHERWISE SET CLASS TO EMPTY STRING
         captions[i].className = '';
       }
   }
