@@ -44,8 +44,8 @@ p {
         VIDEO
 =======================*/
 
-.container .mejs__player {
-  width: 100%;
+.mejs__player .mejs__controls:not([style*="display: none"]) {
+    background: rgba(25, 50, 25, 0.8);
 }
 
 /*=======================
