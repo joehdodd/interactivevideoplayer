@@ -1,16 +1,17 @@
 // DEFINE VIDEO AND CAPTIONS
 const video = document.getElementById('video');
+const capContainer = document.getElementById('capContainer');
 const captions = document.querySelectorAll('p span');
 
-// JUMP TO CURRENT TIME
-for(let i = 0; i < captions.length; ++i) {
-  // THEN ADD CLICK EVENT LISTENER TO LOOPED COLLECTION
-  captions[i].addEventListener('click', () => {
-    // DEFINE TIME VALUE BY STORING DATA-START IN VARIABLE
-    let timeValue = captions[i].getAttribute('data-start');
+// SKIP VIDEO
+capContainer.addEventListener('click', (event) => {
+  // USE EVENT OBJECT TO ONLY TARGET CLICKS ON SPAN TAGS
+  if (event.target.tagName === 'SPAN') {
+    // TARGET SPAN DATA-START
+    let timeValue = event.target.getAttribute('data-start');
     video.currentTime = timeValue;
-  });
-}
+  }
+});
 
 // HIGHLIGHT CAPTIONS
 video.addEventListener('timeupdate', () => {
