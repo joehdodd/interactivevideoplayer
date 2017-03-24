@@ -3,14 +3,14 @@ const video = document.getElementById('video');
 const captions = document.querySelectorAll('p span');
 
 // JUMP TO CURRENT TIME
-   // USING QUERYSELECTORALL, WE NEED TO LOOP OVER THE "ARRAY" FIRST
-for(let j = 0; j < captions.length; ++j) {
+   // USING QUERYSELECTORALL, WE NEED TO LOOP OVER THE COLLECTION FIRST
+for(let i = 0; i < captions.length; ++i) {
   // THEN ADD CLICK EVENT LISTENER TO LOOPED COLLECTION
-    captions[j].addEventListener('click', () => {
+    captions[i].addEventListener('click', () => {
       // DEFINE TIME VALUE BY STORING DATA-START IN VARIABLE
-      let timeValue = captions[j].getAttribute('data-start');
-      // PASS TIMEVALUE TO VIDEO.SETCURRENTITME
-      video.setCurrentTime(timeValue);
+      let timeValue = captions[i].getAttribute('data-start');
+      // SET VIDEO.CURRENTTIME = TIMEVALUE
+      video.currentTime = timeValue;
     });
 };
 
