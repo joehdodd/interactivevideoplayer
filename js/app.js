@@ -14,7 +14,8 @@ for(let i = 0; i < captions.length; ++i) {
     });
 };
 
-// ADD EVENT LISTENER TO VID
+// HIGHLIGHT CAPTIONS
+  // ADD EVENT LISTENER TO VIDEO
 video.addEventListener('timeupdate', () => {
   // LOOP OVER CAPTIONS (QUERYSELECTORALL COLLECTION)
   for(let i = 0; i < captions.length; ++i) {
