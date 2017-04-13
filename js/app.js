@@ -1,29 +1,29 @@
-// DEFINE VIDEO AND CAPTIONS
+// define video and captions
 const video = document.getElementById('video');
 const capContainer = document.getElementById('capContainer');
 const captions = document.querySelectorAll('p span');
 
-// SKIP VIDEO
+// skip video
 capContainer.addEventListener('click', (event) => {
-  // USE EVENT OBJECT TO ONLY TARGET CLICKS ON SPAN TAGS
+  // use event object to only target clicks on span tags
   if (event.target.tagName === 'SPAN') {
-    // TARGET SPAN DATA-START
+    // target span data-start attribute
     let timeValue = event.target.getAttribute('data-start');
     video.currentTime = timeValue;
   }
 });
 
-// HIGHLIGHT CAPTIONS
+// highlight captions
 video.addEventListener('timeupdate', () => {
-  // LOOP OVER CAPTIONS (QUERYSELECTORALL COLLECTION)
+  // loop over captions (querySelectorAll collection)
   for(let i = 0; i < captions.length; ++i) {
-    // DEFINE TIME IN LOCAL SCOPE TO PROPERLY GET VALUE
+    // define time in local scope to properly get value
     let time = video.currentTime;
-    // DEFINE START USING ARRAY INDEX
+    // define start using array index
     let start = captions[i].getAttribute('data-start');
-    // DEFINE END USING ARRAY INDEX
+    // define end using array index
     let end = captions[i].getAttribute('data-end');
-    // SET CONDITIONAL TO CHECK START AND END AGAINST TIME
+      // set condition to check start and end against value of time
       if (time >= start && time <= end) {
         captions[i].className = 'highlight';
       } else {
