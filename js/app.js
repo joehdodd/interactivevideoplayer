@@ -23,7 +23,7 @@ video.addEventListener('timeupdate', () => {
     let start = captions[i].getAttribute('data-start');
     // DEFINE END USING ARRAY INDEX
     let end = captions[i].getAttribute('data-end');
-      // SET CONDITIONAL TO CHECK START AND END AGAINST TIME
+    // SET CONDITIONAL TO CHECK START AND END AGAINST TIME
       if (time >= start && time <= end) {
         captions[i].className = 'highlight';
       } else {
