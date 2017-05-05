@@ -1,6 +1,6 @@
 // define video and captions
 const video = document.getElementById('video');
-const capContainer = document.getElementById('capContainer');
+const capContainer = document.getElementById('captionContainer');
 const captions = document.querySelectorAll('p span');
 
 // skip video
