@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
 // define video and captions
-const video = document.getElementById('vidElement');
+const video = document.getElementById('videoElement');
 const capContainer = document.getElementById('captionContainer');
 const captions = document.querySelectorAll('p span');
 
@@ -31,5 +30,4 @@ video.addEventListener('timeupdate', () => {
         captions[i].className = '';
       }
   }
-});
 });
